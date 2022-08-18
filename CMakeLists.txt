@@ -430,7 +430,7 @@ if(BUILD_TESTING)
 enable_testing()
 include(GoogleTest)
 
-set(HWY_SYSTEM_GTEST OFF CACHE BOOL "Use pre-installed googletest?")
+set(HWY_SYSTEM_GTEST ON CACHE BOOL "Use pre-installed googletest?")
 if(HWY_SYSTEM_GTEST)
 find_package(GTest REQUIRED)
 else()
